@@ -37,6 +37,9 @@ app.use((req, res, next) => {
     next(); // next() is called to pass control to the next middleware function in the stack
 });
 
+app.use(express.json()); // Middleware to parse JSON bodies
+app.use(express.urlencoded({ extended: true })); // Middleware to parse URL-encoded bodies
+
 // these middlewares will be executed for every request made to the server whether it is a GET, POST, PUT, DELETE, etc.
 
 // Routing in Express.js:
