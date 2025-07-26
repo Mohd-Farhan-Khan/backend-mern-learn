@@ -1,0 +1,19 @@
+{
+  "name": "backend-learn",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "Mohd Farhan Khan",
+  "type": "commonjs",
+  "main": "express-server.js",
+  "scripts": {
+    "start": "node ./express-server.js",
+    "start:node": "node ./nodejs-basics.js",
+    "start:express": "node ./express-server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "install": "^0.13.0"
+  }
+}
