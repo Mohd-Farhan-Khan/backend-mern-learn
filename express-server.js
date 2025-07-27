@@ -63,6 +63,25 @@ app.get('/contact', (req, res, next) => {
     // res.send('Contact Page'); // This line will not be executed due to the error
 });
 
+// Dynamic routing example:
+// This route will handle requests to user profiles, e.g., /profile/johndoe
+// It will render a profile page with the username extracted from the URL
+// The username is passed as a parameter in the URL
+// Instead of rendering a static page, it will dynamically generate content based on the username
+// Instead of creating a route for each user, we use colon in the route to indicate a dynamic routing and because of that we can handle many users with a single route
+app.get("/profile/:username", (req, res) => { // Dynamic route to handle user profiles
+    // Extract the username from the request parameters
+    const username = req.params.username;
+    res.send(`Profile page of ${username}`);
+})
+
+app.get("/profile/:username/:age", (req, res) => {
+    // Extract the username and age from the request parameters
+    const username = req.params.username;
+    const age = req.params.age;
+    res.send(`Profile page of ${username}, Age: ${age}`);
+})
+
 // Error Handling Middleware
 // This middleware is used to handle errors that occur during the request/response cycle.
 // It takes four arguments: err, req, res, and next.
