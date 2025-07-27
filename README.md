@@ -29,6 +29,7 @@ Each file in this repository contains detailed comments and explanations to help
 
 - `nodejs-core-and-npm.md` - Detailed explanation of Node.js core modules and npm package management
 - `expressjs-overview.md` - Comprehensive guide to Express.js concepts and usage
+- `database-concepts.md` - Comprehensive overview of databases, SQL vs NoSQL, MongoDB structure, and database operations
 - `nodejs-basics.js` - Code example demonstrating Node.js core concepts with detailed comments
 - `express-server.js` - Express.js server implementation with middleware, routing and error handling examples
 - More resources will be added as the repository grows
